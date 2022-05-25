@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Ecommerce</title>
+    <script src="ecommerce.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        
+        <div class="header flex">
+            <div class="hamburger hide">
+                <img src="images/icon-menu.svg" alt="">
+            </div>
+
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+    
+                    <div class="mole" data-visible="false">
+                        <ul class="main-nav flex" >
+                            <li class="closetoggle hide"><img src="images/icon-close.svg" alt=""></li>
+                            <li class="mole-sub1"><a href="">Collections</a></li>
+                            <li class="mole-sub"><a href="">Men</a></li>
+                            <li class="mole-sub"><a href="">Women</a></li>
+                            <li class="mole-sub"><a href="">About</a></li>
+                            <li class="mole-sub"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="option-nav flex">
+                        <div class="cart"><img class="cart-img" src="images/icon-cart.svg" alt="">
+                        <div class="cart-icon-value">0</div>
+                        </div>
+                        <img class="small" src="images/image-avatar.png" alt="">
+                    </ul>
+                    <div class="cart-content" data-visible="false">
+                        <div class="cart-header">Cart</div>
+                        <div class="cart-details none">
+                            <div class="cart-product-img"><img class="cart-p-img" src="images/image-product-1-thumbnail.jpg" alt=""></div>
+                            <div class="product-calculation">
+                                <div class="product-calc-name">Autumn Limited Edition...</div>
+                                <div class="product-calc">$<span class="product-pricing">125.00</span> <span class="operator-text">x</span> <strong><span class="count-digit">0</span></strong>$<strong><span class="output">0</span></strong></div>
+                            </div>
+                            <div class="delete"><img src="images/icon-delete.svg" alt=""></div>
+                        </div>
+                        <div class="cart-empty">Your Cart is Empty</div>
+                        <div class="cart-buttom">
+                            <button type="button" class="btn btn-secondary btn-lg action">Checkout</button>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div class="main-session">
+        <div class="product-display">
+           <div class="product-display-sub">
+            <img class="product-sub current-slide" src="images/image-product-1.jpg" alt="">
+            
+           </div>
+            <div class="thumbnail hide-sm">
+                <img class="thumnail-img" src="images/image-product-1-thumbnail.jpg" alt="">
+                <img class="thumnail-img" src="images/image-product-2-thumbnail.jpg" alt="">
+                <img class="thumnail-img" src="images/image-product-3-thumbnail.jpg" alt="">
+                <img class="thumnail-img" src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+                <div class="arroww hide">
+                <div class="previous arrow">
+                    <img class="previous-arrow" src="images/icon-previous.svg" alt="">
+                </div>
+                <div class="next arrow">
+                    <img class="next-arrow" src="images/icon-next.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-modal-thumbnail hide-sm" data-visible="false">
+            <div class="modal-toggle-thumbnail">
+                    <img class="close-toggle-thumbnail" src="images/icon-close.svg" alt="">
+                </div>
+            <div class="product-modal-class">
+                
+            <div class="product-su">
+                <img class="product-sub-modal" src="images/image-product-1.jpg" alt="">
+            </div>
+            <div class="thumbnail-modal">
+                <img class="thumnail-img-modal" src="images/image-product-1-thumbnail.jpg" alt="">
+                <img class="thumnail-img-modal" src="images/image-product-2-thumbnail.jpg" alt="">
+                <img class="thumnail-img-modal" src="images/image-product-3-thumbnail.jpg" alt="">
+                <img class="thumnail-img-modal" src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+            </div>
+        </div>
+
+        <div class="product-text">
+            <h1>SNEAKER COMPANY</h1>
+            <h3>Fall Limited Edition <br> Sneakers</h3>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+
+            <div class="pricing-text">
+                <div class="pricing">
+                    <h2>$125.00</h2>
+                    <h4>50%</h4>
+                </div> 
+                <h5 class="discount">$250.00</h5>
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn btn-secondary btn-lg sign"><div class="minus"><img src="images/icon-minus.svg" alt=""></div>
+                    <div class="number">0</div>
+                    <div class="plus"><img src="images/icon-plus.svg" alt=""></div></button>
+                <button type="button" class="btn-cc btn-secondary btn-lg action"><span class="btn-cart"><img class="btn-cart" src="images/icon-cart.svg" alt=""></span> Add to cart</button>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
